@@ -1,0 +1,418 @@
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v20-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v20-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v20-latin-500.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/roboto-v20-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v20-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v20-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/roboto-v20-latin-500.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v20-latin-700.eot"); /* IE9 Compat Modes */
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/roboto-v20-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v20-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v20-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v20-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/roboto-v20-latin-700.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* raleway-regular - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/raleway-v17-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/raleway-v17-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/raleway-v17-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/raleway-v17-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/raleway-v17-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/raleway-v17-latin-regular.svg#Raleway") format("svg"); /* Legacy iOS */
+}
+:root {
+  --primary-text-color: #212121;
+  --subtitle-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --text-bg-color: rgba(47, 48, 58, 0.8);
+}
+/*цвет основного текста #212121 */
+/*цвет вторичного текста #757575*/
+/*белый #ffffff*/
+/*акцент #2196F3;*/
+/*вторичный цвет фона #F5F4FA*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-bg-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16 px;
+  line-height: 0, 615;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: solid 2px tomato;
+}
+.layout {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+div.list-list {
+  margin-top: 50px;
+}
+.flex-box .list {
+  display: flex;
+}
+/* Шапка*/
+.page-header {
+  padding: 25px 0px;
+}
+.flexbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.logo-web {
+  color: var(--accent-color);
+  text-decoration-line: none;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 19;
+}
+.logo {
+  color: var(--primary-text-color);
+  text-decoration-line: none;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 19;
+  margin-right: 85px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.site-nav {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.site-nav a {
+  color: var(--primary-text-color);
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav a {
+  text-decoration-line: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+}
+.link-active {
+  color: var(--accent-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  text-decoration-line: underline;
+  text-decoration-color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.contact a {
+  color: var(--primary-text-color);
+}
+.contact a:hover,
+.contact a:focus {
+  color: var(--accent-color);
+}
+.contact a {
+  text-decoration-line: none;
+}
+/*Секция герой*/
+.hero {
+  display: flex;
+  align-items: center;
+}
+.hero-title {
+  color: var(--primary-bg-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1, 36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--subtitle-text-color);
+}
+
+.button {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-top: 10 px 25px;
+  border-radius: 4px;
+  width: 200px;
+  display: flex;
+}
+.section-title {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.section-subtitle {
+  color: var(--subtitle-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits-title {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+}
+.benefits-title:nth-child(4n) {
+  margin-right: 0;
+}
+/*Секция чем мы занимаемся*/
+.we-do-con {
+  padding-top: 0;
+  padding-bottom: 95px;
+}
+.header-title {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.we-do-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.we-do-title {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+}
+.we-do-subtitle {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-color: var(--text-bg-color);
+}
+/*.we-do-subtitle>a :hover,
+.we-do-subtitle>a :focus{
+   text-decoration-line: underline;
+   text-decoration-color: var(--accent-color);
+}*/
+
+/*Секция наша команда*/
+
+.team-section {
+  background-color: var(--secondary-bg-color);
+  width: auto;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-member {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+}
+.team-member:nth-child(4n) {
+  margin-right: 0;
+}
+.team-section-subtitle {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-section-subtitle a:hover,
+.team-section-subtitle a:focus {
+  text-decoration-line: underline;
+  text-decoration-color: var(--accent-color);
+}
+.team-section-prof {
+  color: var(--subtitle-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1, 18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-section p a:hover,
+.team-section p a:focus {
+  text-decoration-line: underline;
+  text-decoration-color: var(--accent-color);
+}
+
+/*Футер*/
+.address {
+  color: var(--primary-bg-color) !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+}
+.address-section a {
+  text-decoration-line: none;
+}
+.contact-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background: var(--subtitle-text-color);
+}
+.contact-link :hover,
+.contact-link :focus {
+  text-decoration-line: underline;
+  text-decoration-color: var(--accent-color);
+}
+.join-title {
+  color: var(--primary-bg-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: var(--subtitle-text-color);
+}
+.subscribe-title {
+  color: var(--primary-bg-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: var(--subtitle-text-color);
+}
+/*Страница портфолио*/
+
+.button-portfolio {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+  font-family: inherit;
+}
+.button-portfolio :hover,
+.button-portfolio :focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+.projects-nav list {
+  text-decoration-line: none;
+  float: left;
+  margin-left: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
+}
+.projects-subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1, 87;
+  letter-spacing: 0.03em;
+}
+.projects-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1, 5;
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
+  background: var(--subtitle-text-color);
+}
