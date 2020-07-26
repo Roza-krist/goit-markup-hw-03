@@ -94,7 +94,9 @@ body {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: solid 2px tomato;
+}
+li {
+  display: list-item;
 }
 .layout {
   padding-top: 95px;
@@ -108,7 +110,8 @@ div.list-list {
 }
 /* Шапка*/
 .page-header {
-  padding: 25px 0px;
+  padding-top;: 25px
+  padding-bottom: 0
 }
 .flexbox {
   display: flex;
@@ -194,6 +197,10 @@ div.list-list {
 .hero {
   display: flex;
   align-items: center;
+  background-color: #2f303a;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 200px 0;
 }
 .hero-title {
   color: var(--primary-bg-color);
@@ -241,7 +248,7 @@ div.list-list {
   flex-wrap: wrap;
 }
 .benefits-title {
-  width: calc((100% - 30px * 3) / 4);
+  width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 .benefits-title:nth-child(4n) {
@@ -268,7 +275,7 @@ div.list-list {
   flex-wrap: wrap;
 }
 .we-do-title {
-  width: calc((100% - 30px * 2) / 3);
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
 .we-do-subtitle {
@@ -299,7 +306,7 @@ div.list-list {
   flex-wrap: wrap;
 }
 .team-member {
-  width: calc((100% - 30px * 3) / 4);
+  width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
 .team-member:nth-child(4n) {
@@ -333,9 +340,38 @@ div.list-list {
   text-decoration-line: underline;
   text-decoration-color: var(--accent-color);
 }
-
+/*Постоянные клиенты*/
+.client {
+  width: calc((100% - 30px * 4) / 5);
+  margin-right: 30px;
+}
+.client :nth-child(4n) {
+  margin-right: 0;
+}
 /*Футер*/
-.address {
+a.item {
+  margin: 0 0 9px 0;
+  color: var(--white-text-color);
+  font-style: normal;
+}
+.site-footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.logo-position {
+  display: block;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.logo-address{
+  align-content: flex-start;
+}
+.address .item {
   color: var(--primary-bg-color) !important;
   font-style: normal;
   font-weight: normal;
@@ -343,8 +379,20 @@ div.list-list {
   line-height: 1, 71;
   letter-spacing: 0.03em;
 }
+address. .list .item{
+  color: color: rgba(255, 255, 255, 0.6);;
+  text-decoration-line: none;
+  background-color: #2F303A;
+  font-style: normal;
+}
 .address-section a {
   text-decoration-line: none;
+}
+.address-section .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+li {
+  display: list-item;
 }
 .contact-link {
   font-style: normal;
@@ -353,7 +401,7 @@ div.list-list {
   line-height: 1, 71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  background: var(--subtitle-text-color);
+  font-style: normal;
 }
 .contact-link :hover,
 .contact-link :focus {
