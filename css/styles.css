@@ -435,7 +435,7 @@ li {
 }
 
 .projects-item {
-  width: calc((100% - 90px) / 4);
+  width: calc((100% - 60px) / 4);
   margin-right: 30px;
 }
 ul .project-nav .list {
@@ -484,10 +484,14 @@ ul.list .projects-list {
   flex-wrap: wrap;
   text-decoration-line: none;
 }
-ul.list .projects-list {
-  width: calc((100% - 60px) / 9);
+.projects-list li {
+  width: calc((100% - 60px) / 3);
+  margin-bottom: 30px;
+}
+.projects-list li:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+
 .projects-subtitle {
   font-weight: normal;
   font-size: 16px;
