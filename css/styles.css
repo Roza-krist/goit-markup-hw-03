@@ -278,7 +278,6 @@ ul .we-do-list {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
-}
 .we-do-subtitle {
   color: var(--primary-text-color);
   font-style: normal;
