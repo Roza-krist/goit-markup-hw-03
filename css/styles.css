@@ -110,8 +110,8 @@ div.list-list {
 }
 /* Шапка*/
 .page-header {
-  padding-top;: 25px
-  padding-bottom: 0
+  padding-top: 25px;
+  padding-bottom: 0;
 }
 .flexbox {
   display: flex;
@@ -368,7 +368,7 @@ a.item {
   padding: 0;
   margin: 0 0 20px;
 }
-.logo-address{
+.logo-address {
   align-content: flex-start;
 }
 .address .item {
@@ -379,10 +379,10 @@ a.item {
   line-height: 1, 71;
   letter-spacing: 0.03em;
 }
-address. .list .item{
-  color: color: rgba(255, 255, 255, 0.6);;
+.address .list .item {
+  color: rgba(255, 255, 255, 0.6);
   text-decoration-line: none;
-  background-color: #2F303A;
+  background-color: #2f303a;
   font-style: normal;
 }
 .address-section a {
