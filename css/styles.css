@@ -270,13 +270,14 @@ div.list-list {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.we-do-list {
+ul .we-do-list {
   display: flex;
   flex-wrap: wrap;
 }
 .we-do-title {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
+}
 }
 .we-do-subtitle {
   color: var(--primary-text-color);
@@ -301,7 +302,7 @@ div.list-list {
   background-color: var(--secondary-bg-color);
   width: auto;
 }
-.team-list {
+ul .team-list .list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -430,31 +431,70 @@ li {
 }
 /*Страница портфолио*/
 
+.section {
+  padding: 94px 0;
+}
+
+.projects-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+ul .project-nav .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-nav .item:not(:last-child) {
+  margin-right: 8px;
+}
+.projects-nav .button-portfolio {
+  justify-content: center;
+}
+.visually-hiden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .button-portfolio {
-  color: var(--primary-text-color);
+  padding: 6px 22px;
   background-color: var(--secondary-bg-color);
-  font-family: inherit;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 2px;
+  border-color: transparent;
 }
 .button-portfolio :hover,
 .button-portfolio :focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
-.projects-nav list {
+.projects-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+ul.list .projects-list {
+  display: flex;
+  flex-wrap: wrap;
   text-decoration-line: none;
-  float: left;
-  margin-left: 50px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
-  letter-spacing: 0.02em;
+}
+ul.list .projects-list {
+  width: calc((100% - 60px) / 9);
+  margin-right: 30px;
 }
 .projects-subtitle {
   font-weight: normal;
   font-size: 16px;
   line-height: 1, 87;
   letter-spacing: 0.03em;
+  text-decoration-line: none;
 }
 .projects-text {
   font-weight: 400;
@@ -463,4 +503,5 @@ li {
   letter-spacing: 0.03em;
   color: var(--primary-bg-color);
   background: var(--subtitle-text-color);
+  text-decoration-line: none;
 }
