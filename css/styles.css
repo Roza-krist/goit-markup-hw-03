@@ -513,14 +513,14 @@ ul .project-nav .list {
   background: var(--subtitle-text-color);
   text-decoration-line: none;
 }
+.flex-box .list-port {
+  display: flex;
+  flex-wrap: wrap;
+}
 .list-port {
   list-style: none;
   padding: 0;
   margin-top: 0;
-}
-.flex-box .list-port {
-  display: flex;
-  flex-wrap: wrap;
 }
 .logo-port {
   color: var(--primary-bg-color);
