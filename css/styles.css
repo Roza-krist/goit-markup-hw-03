@@ -186,6 +186,7 @@ div.list-list {
 }
 .contact a {
   color: var(--primary-text-color);
+  font-style: normal;
 }
 .contact a:hover,
 .contact a:focus {
@@ -194,14 +195,54 @@ div.list-list {
 .contact a {
   text-decoration-line: none;
 }
+.mail::before {
+  content: "";
+  width: 16px;
+  height: 11px;
+  background-image: url(../images/envelope.svg);
+  background-position: center;
+  background-size: contain;
+  display: inline-flex;
+}
+.tel::before {
+  content: "";
+  width: 10px;
+  height: 15px;
+  background-image: url(../images/telephone.svg);
+  background-position: center;
+  background-size: contain;
+  margin-left: 10px;
+  display: inline-flex;
+}
 /*Секция герой*/
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header-img.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: rgba(47, 48, 58, 0.8);
+  background-color: black;
+}
 .hero {
+  padding: 200px 0;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero-title {
   display: flex;
   align-items: center;
-  background-color: #2f303a;
   letter-spacing: 0.06em;
   text-align: center;
-  padding: 200px 0;
+  margin: 0 0 30px;
 }
 .hero-title {
   color: var(--primary-bg-color);
@@ -212,7 +253,7 @@ div.list-list {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: var(--subtitle-text-color);
+  margin: auto;
 }
 
 .button {
@@ -221,12 +262,46 @@ div.list-list {
   border-color: transparent;
   font-weight: 700;
   font-size: 16px;
-  text-align: center;
   letter-spacing: 0.06em;
   padding-top: 10 px 25px;
   border-radius: 4px;
   width: 200px;
-  display: flex;
+  display: inline-flex;
+  padding: 10px 25px;
+  line-height: 1, 8;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+.benefits-title::before {
+  content: "";
+  height: 120px;
+  background-position: center;
+
+  margin-left: 10px;
+  display: block;
+  background-color: var(--secondary-bg-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.detail::before {
+  background-image: url(../images/antenna-1.svg);
+  background-size: 70px;
+}
+.punctual::before {
+  background-image: url(../images/clock-2.svg);
+  background-size: 70px;
+}
+.plan::before {
+  background-image: url(../images/diagram-3.svg);
+  background-size: 70px;
+}
+.techno::before {
+  background-image: url(../images/astronaut-4.svg);
+  background-size: 70px;
 }
 .section-title {
   color: var(--primary-text-color);
@@ -245,12 +320,12 @@ div.list-list {
   letter-spacing: 0.03em;
 }
 .benefits-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
 }
 .benefits-title {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
+  display: list-item;
 }
 .benefits-title:nth-child(4n) {
   margin-right: 0;
@@ -301,14 +376,20 @@ ul .we-do-list {
 .team-section {
   background-color: var(--secondary-bg-color);
   width: auto;
+  display: flex;
 }
-ul .team-list .list {
+.list-list {
   display: flex;
   flex-wrap: wrap;
 }
-.team-member {
+.team-section .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-section .team-member {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
+  background-color: var(--primary-bg-color);
 }
 .team-member:nth-child(4n) {
   margin-right: 0;
@@ -340,6 +421,22 @@ ul .team-list .list {
 .team-section p a:focus {
   text-decoration-line: underline;
   text-decoration-color: var(--accent-color);
+}
+.description {
+  padding: 0 32px 24px;
+  margin: 10px 0 16px;
+  text-align: center;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.link-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  align-items: center;
 }
 /*Постоянные клиенты*/
 .client {

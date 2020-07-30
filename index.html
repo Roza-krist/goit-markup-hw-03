@@ -25,12 +25,11 @@
             </nav>
             <address class="contact">
                 <ul class="contact-list list">
-                    <li class="nav-item"><a href="mailto:info@devstudio.com"><img src="./images/envelope-picture.svg"
-                                alt="" />
+                    <li class="mail"><a href="mailto:info@devstudio.com">
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="nav-item"><a href="tel:+380961111111"><img src="./images/telephone.svg" alt="" /> +38 096
+                    <li class="nav-item tel"><a href="tel:+380961111111"> +38 096
                             111 11 11
                         </a>
                     </li>
@@ -40,8 +39,8 @@
     </header>
     <div>
         <!--Герой-->
-        <section class="hero ">
-            <div class="container">
+        <section class="hero overlay">
+            <div class="container hero-container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button">Заказать услугу</button>
         </section>
@@ -49,32 +48,28 @@
     <section class="section flex-box">
         <div class="container layout">
             <ul class="list benefits-list">
-                <li class="benefits-title">
-                    <img src="./images/antenna1.svg" alt="Внимание к деталям" />
+                <li class="benefits-title detail">
                     <h2 class="section-title">Внимание к деталям</h2>
                     <p class="section-subtitle">
                         Идейные соображения, а также начало повседневной работы по
                         формированию позиции.
                     </p>
                 </li>
-                <li class="benefits-title">
-                    <img src="./images/clock1.svg" alt="Пунктуальность" />
+                <li class="benefits-title punctual">
                     <h2 class="section-title">Пунктуальность</h2>
                     <p class="section-subtitle">
                         Задача организации, в особенности же рамки и место обучения кадров
                         влечет за собой.
                     </p>
                 </li>
-                <li class="benefits-title">
-                    <img src="./images/diagram1.svg" alt="Планирование" />
+                <li class="benefits-title plan">
                     <h2 class="section-title">Планирование</h2>
                     <p class="section-subtitle">
                         Равным образом консультация с широким активом в значительной степени
                         обуславливает.
                     </p>
                 </li>
-                <li class="benefits-title">
-                    <img src="./images/astronaut1.svg" alt="Современные технологии" />
+                <li class="benefits-title techno">
                     <h2 class="section-title">Современные технологии</h2>
                     <p class="section-subtitle">
                         Значимость этих проблем настолько очевидна, что реализация плановых
@@ -110,30 +105,44 @@
         </div>
     </section>
     <!--Наша команда-->
-    <section class="team-section flex-box">
+    <section class="team-section list-list">
         <div class="container layout">
             <h2 class="header-title">Наша команда</h2>
             <div class="list-list">
                 <ul class="team-list list">
                     <li class="team-member">
-                        <img lang="en" src="./images/team-img1.png" alt="Product Designer" />
+                        <img lang="en" src="./images/team-img1.png" alt="Product Designer" width="270" height="260" />
+                        <div class="description">
                         <h3 class="team-section-subtitle">Николай Кучеренко</h3>
                         <p lang="en" class="team-section-prof">Product Designer</p>
                     </li>
-                    <li class="team-member">
-                        <ul class="list">
-                            <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Twitter></a></li>
-                            <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Facebook></a></li>
-                            <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=LinkdedIn></a></li>
-                            <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Instagram></a></li>
+                    <li>  
+                           <ul class=" social-links list">
+                            <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Twitter>
+                                <svg class="link-icon">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg></a></li>
+                            <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Facebook>
+                                <svg class="link-icon">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg></a></li>
+                            <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=LinkdedIn>
+                                <svg class="link-icon">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg></a></li>
+                            <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Instagram>
+                                <svg class="link-icon">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg></a></li>
                         </ul>
+                    </div>
                     </li>
                     <li class="team-member">
-                        <img src="./images/team-img2.png" alt="Frontend Developer" />
+                        <img src="./images/team-img2.png" alt="Frontend Developer" width="270"height="260"/>
                         <h3 class="team-section-subtitle">Ольга Иванова</h3>
                         <p lang="en" class="team-section-prof">Frontend Developer</p>
                     </li>
-                    <li class="team-member">
+                    <li>
                         <ul class="list">
                             <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Instagram></a></li>
                             <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Twitter></a></li>
@@ -142,11 +151,11 @@
                         </ul>
                     </li>
                     <li class="team-member">
-                        <img src="./images/team-img3.png" alt="Marketing" />
+                        <img src="./images/team-img3.png" alt="Marketing" width="270" height="260"/>
                         <h3 class="team-section-subtitle">Андрей Шевченко</h3>
                         <p lang="en" class="team-section-prof">Marketing</p>
                     </li>
-                    <li class="team-member">
+                    <li>
                         <ul class="list">
                             <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Instagram></a></li>
                             <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Twitter></a></li>
@@ -155,11 +164,11 @@
                         </ul>
                     </li>
                     <li class="team-member">
-                        <img src="./images/team-img4.png" alt="UI Designer" />
+                        <img src="./images/team-img4.png" alt="UI Designer" width="270" height="260"/>
                         <h3 class="team-section-subtitle">Иван Николаев</h3>
                         <p lang="en" class="team-section-prof">UI Designer</p>
                     </li>
-                    <li class="team-member">
+                    <li>
                         <ul class="list">
                             <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Instagram></a></li>
                             <li><a href="" target="_blank" rel="noopener noreferrer" aria-label=Twitter></a></li>
@@ -170,10 +179,11 @@
                 </ul>
             </div>
         </div>
+        </div>
     </section>
     <!--Постоянные клиенты-->
     <section class="clients flex-box">
-        <div class="container layout">
+        <div class="container layout ">
             <h2 class="header-title">Постоянные клиенты</h2>
             <div class="list-list">
                 <ul class="team-list list">
