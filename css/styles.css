@@ -102,7 +102,7 @@ li {
   padding-top: 95px;
   padding-bottom: 95px;
 }
-div.list-list {
+div .list-list {
   margin-top: 50px;
 }
 .flex-box .list {
@@ -373,10 +373,18 @@ ul .we-do-list {
 
 /*Секция наша команда*/
 
+.flex-box {
+  display: flex;
+}
+.flex {
+  flex-direction: row;
+  align-content: flex-start;
+}
 .team-section {
   background-color: var(--secondary-bg-color);
   width: auto;
   display: flex;
+  flex-direction: row;
 }
 .team-list {
   display: flex;
@@ -427,11 +435,12 @@ ul .we-do-list {
   margin: 10px 0 16px;
   text-align: center;
 }
-.social-links {
-  display: flex;
-  justify-content: flex-end;
+.team-list .social-links {
+  justify-content: space-around;
   padding-bottom: 24px;
   align-items: center;
+  margin-left: 32px;
+  margin-right: 24px;
 }
 .link-icon {
   width: 20px;
