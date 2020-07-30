@@ -378,7 +378,7 @@ ul .we-do-list {
   width: auto;
   display: flex;
 }
-.team-list .list {
+.team-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -429,8 +429,9 @@ ul .we-do-list {
 }
 .social-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding-bottom: 24px;
+  align-items: center;
 }
 .link-icon {
   width: 20px;
