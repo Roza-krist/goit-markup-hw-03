@@ -378,7 +378,7 @@ ul .we-do-list {
   width: auto;
   display: flex;
 }
-.list-list {
+.team-list .list {
   display: flex;
   flex-wrap: wrap;
 }
