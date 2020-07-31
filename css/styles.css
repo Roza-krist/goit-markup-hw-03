@@ -376,10 +376,7 @@ ul .we-do-list {
 .flex-box {
   display: flex;
 }
-.flex {
-  flex-direction: row;
-  align-content: flex-start;
-}
+
 .team-section {
   background-color: var(--secondary-bg-color);
   width: auto;
